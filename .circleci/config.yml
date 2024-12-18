@@ -7,7 +7,6 @@ jobs:
     steps:
       - checkout
       - setup_remote_docker:
-          version: 20.10.7  # Docker version to use
           docker_layer_caching: true  # Enable caching for faster builds
       - run:
           name: Set up Docker Hub credentials
