@@ -15,11 +15,11 @@ jobs:
       - run:
           name: Build Docker image
           command: |
-            docker build -t prayags/nodejs-app .
+            docker build -t prayags/node-app1 .
       - run:
           name: Push Docker image to Docker Hub
           command: |
-            docker push prayags/nodejs-app:latest
+            docker push prayags/node-app1:latest
 
 workflows:
   version: 2
